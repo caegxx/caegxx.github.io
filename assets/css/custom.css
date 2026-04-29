@@ -1,0 +1,68 @@
+/* === Aviation Navy Theme — custom overrides === */
+/* This file extends Chirpy's default styles. It is loaded via _includes/head.html. */
+
+:root {
+  --link-color: #1e3a5f !important;
+  --link-underline-color: rgba(30, 58, 95, 0.4) !important;
+  --site-title-color: #0d2342 !important;
+  --site-subtitle-color: #4a6b8c !important;
+}
+
+html[data-mode='dark'] {
+  --link-color: #7ba1d1 !important;
+  --link-underline-color: rgba(123, 161, 209, 0.4) !important;
+  --site-title-color: #c5d6e8 !important;
+}
+
+/* Post titles in feed and article header */
+.post-preview h1,
+.post-content h1,
+#post-list .card-wrapper h1 {
+  color: #1e3a5f;
+}
+
+html[data-mode='dark'] .post-preview h1,
+html[data-mode='dark'] .post-content h1,
+html[data-mode='dark'] #post-list .card-wrapper h1 {
+  color: #c5d6e8;
+}
+
+/* Avatar border */
+#avatar {
+  border-color: rgba(30, 58, 95, 0.25) !important;
+}
+
+/* Site title spacing */
+.site-title a {
+  letter-spacing: -0.01em;
+  color: #0d2342 !important;
+}
+
+html[data-mode='dark'] .site-title a {
+  color: #c5d6e8 !important;
+}
+
+/* Sidebar fix: prevent title and subtitle from being clipped */
+#sidebar .site-title {
+  font-size: 1.4rem;
+  line-height: 1.3;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  padding: 0 0.5rem;
+}
+
+#sidebar .site-subtitle {
+  font-size: 0.85rem;
+  line-height: 1.4;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  padding: 0 0.5rem;
+  margin-top: 0.3rem;
+}
+
+/* Tag chip border */
+.post-tag {
+  border-color: rgba(30, 58, 95, 0.3);
+}
