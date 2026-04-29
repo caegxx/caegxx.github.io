@@ -1,6 +1,6 @@
 ---
 title: "Single-Aircraft ATR 72-600 Weekly Scheduling: A Day-Pattern Framework"
-date: 2026-04-29 18:00:00 +0700
+date: 2026-04-29 08:00:00 +0700
 categories: [Aviation, Network Planning]
 tags: [atr 72-600, scheduling, regional aviation, network planning, fdp, southeast asia]
 description: "A practical framework for building a weekly schedule for a single ATR 72-600 in Southeast Asian operations, with realistic block times, six reusable day patterns, and FDP discipline."
