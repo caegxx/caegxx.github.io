@@ -14,7 +14,7 @@ timezone: Asia/Phnom_Penh
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Sig's Aviation Notes
+title: AviaSight
 
 tagline: SEA aviation, network planning, traffic rights
 
@@ -34,7 +34,7 @@ twitter:
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: caegxx
+  name: AviaSight
   email: xa_zxx@163.com
   fediverse_handle: # fill in your fediverse handle. E.g. "@username@domain.com"
   links:
