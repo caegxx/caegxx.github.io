@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 480" width="900" height="480" font-family="Helvetica, Arial, sans-serif">
+  <!-- Background -->
+  <rect width="900" height="480" fill="#ffffff"/>
+
+  <!-- Title -->
+  <text x="450" y="32" text-anchor="middle" font-size="18" font-weight="700" fill="#0d2342">90-Day Route Launch Timeline</text>
+  <text x="450" y="52" text-anchor="middle" font-size="12" fill="#4a6b8c">From board approval to first commercial flight</text>
+
+  <!-- Time axis -->
+  <line x1="180" y1="90" x2="860" y2="90" stroke="#1e3a5f" stroke-width="1.5"/>
+
+  <!-- Day markers -->
+  <g font-size="11" fill="#1e3a5f" text-anchor="middle">
+    <line x1="180" y1="85" x2="180" y2="95" stroke="#1e3a5f" stroke-width="1.5"/>
+    <text x="180" y="78">Day 0</text>
+
+    <line x1="293" y1="85" x2="293" y2="95" stroke="#1e3a5f" stroke-width="1.5"/>
+    <text x="293" y="78">Day 15</text>
+
+    <line x1="406" y1="85" x2="406" y2="95" stroke="#1e3a5f" stroke-width="1.5"/>
+    <text x="406" y="78">Day 30</text>
+
+    <line x1="520" y1="85" x2="520" y2="95" stroke="#1e3a5f" stroke-width="1.5"/>
+    <text x="520" y="78">Day 45</text>
+
+    <line x1="633" y1="85" x2="633" y2="95" stroke="#1e3a5f" stroke-width="1.5"/>
+    <text x="633" y="78">Day 60</text>
+
+    <line x1="746" y1="85" x2="746" y2="95" stroke="#1e3a5f" stroke-width="1.5"/>
+    <text x="746" y="78">Day 75</text>
+
+    <line x1="860" y1="85" x2="860" y2="95" stroke="#1e3a5f" stroke-width="1.5"/>
+    <text x="860" y="78">Day 90</text>
+  </g>
+
+  <!-- Workstream labels (left side) -->
+  <g font-size="11" fill="#0d2342" text-anchor="end">
+    <text x="170" y="124">Commercial &amp; Pricing</text>
+    <text x="170" y="164">Regulatory &amp; Permits</text>
+    <text x="170" y="204">Slot &amp; Airport</text>
+    <text x="170" y="244">Operations &amp; Crew</text>
+    <text x="170" y="284">Ground Handling</text>
+    <text x="170" y="324">Distribution &amp; GDS</text>
+    <text x="170" y="364">Marketing &amp; Sales</text>
+    <text x="170" y="404">Sales Open / Operate</text>
+  </g>
+
+  <!-- Bars (each bar represents the active period) -->
+  <!-- Day pixel mapping: Day 0 = x180, Day 90 = x860, so 1 day = 7.555 px -->
+
+  <!-- Commercial & Pricing: Day 0-25 -->
+  <rect x="180" y="112" width="189" height="22" fill="#1e3a5f" rx="2"/>
+  <text x="274" y="127" text-anchor="middle" font-size="10" fill="#ffffff" font-weight="600">Fare design, RM setup</text>
+
+  <!-- Regulatory & Permits: Day 0-75 -->
+  <rect x="180" y="152" width="567" height="22" fill="#1e3a5f" rx="2"/>
+  <text x="463" y="167" text-anchor="middle" font-size="10" fill="#ffffff" font-weight="600">FAOC, flight permits, designation</text>
+
+  <!-- Slot & Airport: Day 0-60 -->
+  <rect x="180" y="192" width="454" height="22" fill="#1e3a5f" rx="2"/>
+  <text x="407" y="207" text-anchor="middle" font-size="10" fill="#ffffff" font-weight="600">Slot request, declaration, confirmation</text>
+
+  <!-- Operations & Crew: Day 30-85 -->
+  <rect x="406" y="232" width="416" height="22" fill="#1e3a5f" rx="2"/>
+  <text x="614" y="247" text-anchor="middle" font-size="10" fill="#ffffff" font-weight="600">Route study, crew training, OFP</text>
+
+  <!-- Ground Handling: Day 20-80 -->
+  <rect x="331" y="272" width="453" height="22" fill="#1e3a5f" rx="2"/>
+  <text x="557" y="287" text-anchor="middle" font-size="10" fill="#ffffff" font-weight="600">SGHA, station setup, training</text>
+
+  <!-- Distribution & GDS: Day 30-50 -->
+  <rect x="406" y="312" width="152" height="22" fill="#1e3a5f" rx="2"/>
+  <text x="482" y="327" text-anchor="middle" font-size="10" fill="#ffffff" font-weight="600">GDS filing, IBE</text>
+
+  <!-- Marketing & Sales: Day 50-90 -->
+  <rect x="558" y="352" width="302" height="22" fill="#1e3a5f" rx="2"/>
+  <text x="709" y="367" text-anchor="middle" font-size="10" fill="#ffffff" font-weight="600">Inaugural campaign, trade press</text>
+
+  <!-- Sales Open / Operate: Day 50-90 -->
+  <rect x="558" y="392" width="302" height="22" fill="#0EA5E9" rx="2"/>
+  <text x="709" y="407" text-anchor="middle" font-size="10" fill="#ffffff" font-weight="600">Tickets on sale → first flight</text>
+
+  <!-- Critical milestones (vertical dashed lines) -->
+  <g stroke="#dc2626" stroke-width="1.2" stroke-dasharray="4,3" opacity="0.6">
+    <line x1="293" y1="100" x2="293" y2="430"/>
+    <line x1="558" y1="100" x2="558" y2="430"/>
+    <line x1="860" y1="100" x2="860" y2="430"/>
+  </g>
+
+  <!-- Milestone labels -->
+  <g font-size="9.5" fill="#dc2626" font-weight="600" text-anchor="middle">
+    <text x="293" y="445">Decision lock</text>
+    <text x="558" y="445">Sales open</text>
+    <text x="860" y="445">First flight</text>
+  </g>
+
+  <!-- Legend -->
+  <g font-size="10" fill="#4a6b8c">
+    <rect x="180" y="460" width="14" height="10" fill="#1e3a5f"/>
+    <text x="200" y="469">Preparation workstream</text>
+    <rect x="350" y="460" width="14" height="10" fill="#0EA5E9"/>
+    <text x="370" y="469">Customer-facing phase</text>
+    <line x1="540" y1="465" x2="556" y2="465" stroke="#dc2626" stroke-width="1.2" stroke-dasharray="4,3"/>
+    <text x="562" y="469">Critical milestone</text>
+  </g>
+</svg>

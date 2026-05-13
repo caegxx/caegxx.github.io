@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" width="900" height="520" font-family="Helvetica, Arial, sans-serif">
+  <rect width="900" height="520" fill="#ffffff"/>
+
+  <!-- Title -->
+  <text x="450" y="32" text-anchor="middle" font-size="18" font-weight="700" fill="#0d2342">Critical Decision Gates and Failure Paths</text>
+  <text x="450" y="52" text-anchor="middle" font-size="12" fill="#4a6b8c">What happens when each gate fails or succeeds</text>
+
+  <!-- Define reusable marker for arrowheads -->
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 z" fill="#1e3a5f"/>
+    </marker>
+    <marker id="arrowRed" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 z" fill="#dc2626"/>
+    </marker>
+  </defs>
+
+  <!-- Node 1: Board Approval -->
+  <rect x="50" y="90" width="160" height="60" rx="6" fill="#1e3a5f"/>
+  <text x="130" y="115" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">Board Approval</text>
+  <text x="130" y="132" text-anchor="middle" font-size="10" fill="#c5d6e8">Day 0</text>
+
+  <!-- Node 2: Slot Available? (Decision diamond) -->
+  <polygon points="350,120 430,80 510,120 430,160" fill="#ffffff" stroke="#1e3a5f" stroke-width="2"/>
+  <text x="430" y="115" text-anchor="middle" font-size="11" font-weight="700" fill="#0d2342">Slot</text>
+  <text x="430" y="130" text-anchor="middle" font-size="11" font-weight="700" fill="#0d2342">Confirmed?</text>
+  <text x="430" y="175" text-anchor="middle" font-size="9" fill="#4a6b8c">Day 30-60</text>
+
+  <!-- Node 3: Permits Granted? (Decision diamond) -->
+  <polygon points="650,120 730,80 810,120 730,160" fill="#ffffff" stroke="#1e3a5f" stroke-width="2"/>
+  <text x="730" y="115" text-anchor="middle" font-size="11" font-weight="700" fill="#0d2342">Permits</text>
+  <text x="730" y="130" text-anchor="middle" font-size="11" font-weight="700" fill="#0d2342">Granted?</text>
+  <text x="730" y="175" text-anchor="middle" font-size="9" fill="#4a6b8c">Day 60-75</text>
+
+  <!-- Node 4: Sales Open -->
+  <rect x="350" y="240" width="160" height="60" rx="6" fill="#1e3a5f"/>
+  <text x="430" y="265" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">Sales Open</text>
+  <text x="430" y="282" text-anchor="middle" font-size="10" fill="#c5d6e8">Day 45-50</text>
+
+  <!-- Node 5: First Flight -->
+  <rect x="650" y="240" width="160" height="60" rx="6" fill="#0EA5E9"/>
+  <text x="730" y="265" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">First Flight</text>
+  <text x="730" y="282" text-anchor="middle" font-size="10" fill="#ffffff" opacity="0.9">Day 90</text>
+
+  <!-- Failure branches -->
+  <!-- Slot fail -->
+  <rect x="290" y="370" width="280" height="62" rx="6" fill="#fef2f2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="430" y="390" text-anchor="middle" font-size="11" font-weight="700" fill="#dc2626">Slot Denied</text>
+  <text x="430" y="408" text-anchor="middle" font-size="10" fill="#7f1d1d">Re-time within capacity window,</text>
+  <text x="430" y="422" text-anchor="middle" font-size="10" fill="#7f1d1d">or defer to next season (+6 months)</text>
+
+  <!-- Permit fail -->
+  <rect x="600" y="370" width="280" height="62" rx="6" fill="#fef2f2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="740" y="390" text-anchor="middle" font-size="11" font-weight="700" fill="#dc2626">Permit Delayed</text>
+  <text x="740" y="408" text-anchor="middle" font-size="10" fill="#7f1d1d">Delay launch, refund sold tickets,</text>
+  <text x="740" y="422" text-anchor="middle" font-size="10" fill="#7f1d1d">absorb cost or push first flight</text>
+
+  <!-- Arrows: main happy path -->
+  <line x1="210" y1="120" x2="346" y2="120" stroke="#1e3a5f" stroke-width="1.8" marker-end="url(#arrow)"/>
+  <line x1="510" y1="120" x2="646" y2="120" stroke="#1e3a5f" stroke-width="1.8" marker-end="url(#arrow)"/>
+
+  <!-- YES labels above arrows -->
+  <text x="555" y="113" text-anchor="middle" font-size="10" font-weight="600" fill="#16a34a">YES</text>
+
+  <!-- Arrow: Slot Yes → Sales Open (down-curve) -->
+  <path d="M 430 160 Q 430 200 430 240" stroke="#1e3a5f" stroke-width="1.8" fill="none" marker-end="url(#arrow)"/>
+  <text x="445" y="200" font-size="10" font-weight="600" fill="#16a34a">YES</text>
+
+  <!-- Arrow: Permits Yes → First Flight -->
+  <path d="M 730 160 Q 730 200 730 240" stroke="#1e3a5f" stroke-width="1.8" fill="none" marker-end="url(#arrow)"/>
+  <text x="745" y="200" font-size="10" font-weight="600" fill="#16a34a">YES</text>
+
+  <!-- Arrow: Sales Open → First Flight -->
+  <line x1="510" y1="270" x2="646" y2="270" stroke="#1e3a5f" stroke-width="1.8" marker-end="url(#arrow)"/>
+
+  <!-- Failure arrows -->
+  <!-- Slot No → Slot Denied -->
+  <path d="M 430 160 Q 430 200 430 240" stroke="none" fill="none"/>
+  <line x1="390" y1="155" x2="370" y2="365" stroke="#dc2626" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arrowRed)"/>
+  <text x="345" y="270" font-size="10" font-weight="600" fill="#dc2626">NO</text>
+
+  <!-- Permit No → Permit Delayed -->
+  <line x1="770" y1="155" x2="790" y2="365" stroke="#dc2626" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arrowRed)"/>
+  <text x="795" y="270" font-size="10" font-weight="600" fill="#dc2626">NO</text>
+
+  <!-- Key insight box at bottom -->
+  <rect x="100" y="460" width="700" height="40" rx="4" fill="#f1f5f9"/>
+  <text x="450" y="479" text-anchor="middle" font-size="11" font-weight="700" fill="#0d2342">Key insight: Slot and permit gates run in parallel, not sequence.</text>
+  <text x="450" y="494" text-anchor="middle" font-size="10" fill="#4a6b8c">A failure at either gate forces re-work across all downstream workstreams. Plan for both contingencies from Day 0.</text>
+</svg>

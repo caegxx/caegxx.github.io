@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 540" width="900" height="540" font-family="Helvetica, Arial, sans-serif">
+  <rect width="900" height="540" fill="#ffffff"/>
+
+  <!-- Title -->
+  <text x="450" y="32" text-anchor="middle" font-size="18" font-weight="700" fill="#0d2342">Seven Parallel Workstreams and Their Dependencies</text>
+  <text x="450" y="52" text-anchor="middle" font-size="12" fill="#4a6b8c">Why a single project manager owning all workstreams is non-negotiable</text>
+
+  <defs>
+    <marker id="dep-arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 z" fill="#1e3a5f" opacity="0.7"/>
+    </marker>
+  </defs>
+
+  <!-- Central node: Route Launch -->
+  <circle cx="450" cy="280" r="60" fill="#1e3a5f"/>
+  <text x="450" y="275" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">Route</text>
+  <text x="450" y="293" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">Launch</text>
+
+  <!-- 7 workstream nodes arranged in a circle -->
+  <!-- 1. Commercial (top) -->
+  <g>
+    <circle cx="450" cy="120" r="44" fill="#ffffff" stroke="#1e3a5f" stroke-width="2"/>
+    <text x="450" y="116" text-anchor="middle" font-size="11" font-weight="700" fill="#0d2342">Commercial</text>
+    <text x="450" y="131" text-anchor="middle" font-size="9" fill="#4a6b8c">Fares, RM,</text>
+    <text x="450" y="143" text-anchor="middle" font-size="9" fill="#4a6b8c">forecasts</text>
+  </g>
+
+  <!-- 2. Regulatory (upper right) -->
+  <g>
+    <circle cx="660" cy="170" r="44" fill="#ffffff" stroke="#1e3a5f" stroke-width="2"/>
+    <text x="660" y="166" text-anchor="middle" font-size="11" font-weight="700" fill="#0d2342">Regulatory</text>
+    <text x="660" y="181" text-anchor="middle" font-size="9" fill="#4a6b8c">FAOC,</text>
+    <text x="660" y="193" text-anchor="middle" font-size="9" fill="#4a6b8c">designation</text>
+  </g>
+
+  <!-- 3. Slot (right) -->
+  <g>
+    <circle cx="730" cy="320" r="44" fill="#ffffff" stroke="#1e3a5f" stroke-width="2"/>
+    <text x="730" y="316" text-anchor="middle" font-size="11" font-weight="700" fill="#0d2342">Slot</text>
+    <text x="730" y="331" text-anchor="middle" font-size="9" fill="#4a6b8c">SCR/SMA,</text>
+    <text x="730" y="343" text-anchor="middle" font-size="9" fill="#4a6b8c">capacity</text>
+  </g>
+
+  <!-- 4. Operations (lower right) -->
+  <g>
+    <circle cx="615" cy="450" r="44" fill="#ffffff" stroke="#1e3a5f" stroke-width="2"/>
+    <text x="615" y="446" text-anchor="middle" font-size="11" font-weight="700" fill="#0d2342">Operations</text>
+    <text x="615" y="461" text-anchor="middle" font-size="9" fill="#4a6b8c">OFP, crew,</text>
+    <text x="615" y="473" text-anchor="middle" font-size="9" fill="#4a6b8c">route study</text>
+  </g>
+
+  <!-- 5. Ground Handling (lower left) -->
+  <g>
+    <circle cx="285" cy="450" r="44" fill="#ffffff" stroke="#1e3a5f" stroke-width="2"/>
+    <text x="285" y="442" text-anchor="middle" font-size="11" font-weight="700" fill="#0d2342">Ground</text>
+    <text x="285" y="455" text-anchor="middle" font-size="11" font-weight="700" fill="#0d2342">Handling</text>
+    <text x="285" y="470" text-anchor="middle" font-size="9" fill="#4a6b8c">SGHA, station</text>
+  </g>
+
+  <!-- 6. Distribution (left) -->
+  <g>
+    <circle cx="170" cy="320" r="44" fill="#ffffff" stroke="#1e3a5f" stroke-width="2"/>
+    <text x="170" y="316" text-anchor="middle" font-size="11" font-weight="700" fill="#0d2342">Distribution</text>
+    <text x="170" y="331" text-anchor="middle" font-size="9" fill="#4a6b8c">GDS, IBE,</text>
+    <text x="170" y="343" text-anchor="middle" font-size="9" fill="#4a6b8c">channels</text>
+  </g>
+
+  <!-- 7. Marketing (upper left) -->
+  <g>
+    <circle cx="240" cy="170" r="44" fill="#ffffff" stroke="#1e3a5f" stroke-width="2"/>
+    <text x="240" y="166" text-anchor="middle" font-size="11" font-weight="700" fill="#0d2342">Marketing</text>
+    <text x="240" y="181" text-anchor="middle" font-size="9" fill="#4a6b8c">PR, trade,</text>
+    <text x="240" y="193" text-anchor="middle" font-size="9" fill="#4a6b8c">launch comms</text>
+  </g>
+
+  <!-- Lines from center to each workstream (radiating) -->
+  <g stroke="#1e3a5f" stroke-width="1.4" opacity="0.5">
+    <line x1="450" y1="220" x2="450" y2="164"/>
+    <line x1="495" y1="240" x2="624" y2="195"/>
+    <line x1="510" y1="280" x2="686" y2="320"/>
+    <line x1="490" y1="330" x2="582" y2="416"/>
+    <line x1="410" y1="330" x2="318" y2="416"/>
+    <line x1="390" y1="280" x2="214" y2="320"/>
+    <line x1="405" y1="240" x2="276" y2="195"/>
+  </g>
+
+  <!-- Key dependency arrows (showing which workstreams block others) -->
+  <!-- Slot → Operations (slot times define OFP) -->
+  <path d="M 705 358 Q 680 410 645 415" stroke="#dc2626" stroke-width="1.6" fill="none" stroke-dasharray="4,3" marker-end="url(#dep-arrow)"/>
+
+  <!-- Regulatory → Distribution (no permit, no GDS filing) -->
+  <path d="M 620 200 Q 400 200 210 295" stroke="#dc2626" stroke-width="1.6" fill="none" stroke-dasharray="4,3" marker-end="url(#dep-arrow)"/>
+
+  <!-- Slot → Distribution (no slot, no schedule to file) -->
+  <path d="M 690 340 Q 450 360 213 335" stroke="#dc2626" stroke-width="1.6" fill="none" stroke-dasharray="4,3" marker-end="url(#dep-arrow)"/>
+
+  <!-- Commercial → Marketing (fares must exist before press launches) -->
+  <path d="M 410 130 Q 320 130 282 155" stroke="#dc2626" stroke-width="1.6" fill="none" stroke-dasharray="4,3" marker-end="url(#dep-arrow)"/>
+
+  <!-- Legend at bottom -->
+  <g font-size="11" fill="#4a6b8c">
+    <line x1="120" y1="510" x2="160" y2="510" stroke="#1e3a5f" stroke-width="1.4" opacity="0.5"/>
+    <text x="170" y="514">Coordination link with project manager</text>
+    <line x1="450" y1="510" x2="490" y2="510" stroke="#dc2626" stroke-width="1.6" stroke-dasharray="4,3"/>
+    <text x="500" y="514">Hard dependency (blocker if missed)</text>
+  </g>
+</svg>
