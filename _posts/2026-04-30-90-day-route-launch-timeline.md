@@ -1,6 +1,6 @@
 ---
 title: "How a Route Actually Gets Launched: A 90-Day Timeline"
-date: 2026-04-30 16:00:00 +0700
+date: 2026-05-13 16:00:00 +0700
 categories: [Aviation, Network Planning]
 tags: [route launch, network planning, schedule planning, project management, regional aviation, operations]
 description: "A practitioner's walkthrough of the full 90-day timeline from board approval to first commercial flight for a new airline route, covering seven parallel workstreams, critical decision gates, and the dependencies that most often cause launches to slip."
