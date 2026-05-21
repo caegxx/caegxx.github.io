@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500" width="900" height="500" font-family="Helvetica, Arial, sans-serif">
+  <rect width="900" height="500" fill="#ffffff"/>
+
+  <!-- Title -->
+  <text x="450" y="32" text-anchor="middle" font-size="18" font-weight="700" fill="#0d2342">Bilateral ASA Negotiation Timeline</text>
+  <text x="450" y="52" text-anchor="middle" font-size="12" fill="#4a6b8c">Typical 12 to 24-month path from initial enquiry to signed instrument</text>
+
+  <!-- Main horizontal timeline -->
+  <line x1="80" y1="150" x2="820" y2="150" stroke="#1e3a5f" stroke-width="2"/>
+
+  <!-- Stage circles on timeline (6 stages) -->
+  <g>
+    <!-- Stage 1: Diplomatic enquiry -->
+    <circle cx="80" cy="150" r="22" fill="#1e3a5f"/>
+    <text x="80" y="156" text-anchor="middle" font-size="13" font-weight="700" fill="#ffffff">1</text>
+
+    <!-- Stage 2: Memorandum exchange -->
+    <circle cx="228" cy="150" r="22" fill="#1e3a5f"/>
+    <text x="228" y="156" text-anchor="middle" font-size="13" font-weight="700" fill="#ffffff">2</text>
+
+    <!-- Stage 3: First round -->
+    <circle cx="376" cy="150" r="22" fill="#1e3a5f"/>
+    <text x="376" y="156" text-anchor="middle" font-size="13" font-weight="700" fill="#ffffff">3</text>
+
+    <!-- Stage 4: Technical rounds -->
+    <circle cx="524" cy="150" r="22" fill="#1e3a5f"/>
+    <text x="524" y="156" text-anchor="middle" font-size="13" font-weight="700" fill="#ffffff">4</text>
+
+    <!-- Stage 5: MoU initial -->
+    <circle cx="672" cy="150" r="22" fill="#1e3a5f"/>
+    <text x="672" y="156" text-anchor="middle" font-size="13" font-weight="700" fill="#ffffff">5</text>
+
+    <!-- Stage 6: Signature -->
+    <circle cx="820" cy="150" r="22" fill="#0EA5E9"/>
+    <text x="820" y="156" text-anchor="middle" font-size="13" font-weight="700" fill="#ffffff">6</text>
+  </g>
+
+  <!-- Time labels under timeline -->
+  <g font-size="10" fill="#64748b" text-anchor="middle">
+    <text x="80" y="195">Month 0</text>
+    <text x="228" y="195">Month 1-3</text>
+    <text x="376" y="195">Month 3-6</text>
+    <text x="524" y="195">Month 6-12</text>
+    <text x="672" y="195">Month 12-18</text>
+    <text x="820" y="195">Month 18-24</text>
+  </g>
+
+  <!-- Stage labels above timeline -->
+  <g font-size="11" font-weight="700" fill="#0d2342" text-anchor="middle">
+    <text x="80" y="105">Diplomatic</text>
+    <text x="80" y="119">Enquiry</text>
+
+    <text x="228" y="105">Memorandum</text>
+    <text x="228" y="119">Exchange</text>
+
+    <text x="376" y="105">First Round</text>
+    <text x="376" y="119">of Talks</text>
+
+    <text x="524" y="105">Technical</text>
+    <text x="524" y="119">Rounds</text>
+
+    <text x="672" y="105">MoU</text>
+    <text x="672" y="119">Initialled</text>
+
+    <text x="820" y="105">Treaty</text>
+    <text x="820" y="119">Signed</text>
+  </g>
+
+  <!-- Stage descriptions below timeline -->
+  <g font-size="9.5" fill="#4a6b8c" text-anchor="middle">
+    <text x="80" y="225">CAA-to-CAA</text>
+    <text x="80" y="237">letter, intent</text>
+
+    <text x="228" y="225">Each side shares</text>
+    <text x="228" y="237">positions, draft</text>
+
+    <text x="376" y="225">In-person or</text>
+    <text x="376" y="237">virtual, scope</text>
+
+    <text x="524" y="225">Article-by-article,</text>
+    <text x="524" y="237">2-4 rounds typical</text>
+
+    <text x="672" y="225">Heads of</text>
+    <text x="672" y="237">delegation initial</text>
+
+    <text x="820" y="225">Foreign Minister</text>
+    <text x="820" y="237">or equivalent</text>
+  </g>
+
+  <!-- Below: parallel workstreams that run alongside -->
+  <text x="450" y="295" text-anchor="middle" font-size="13" font-weight="700" fill="#0d2342">Parallel workstreams supporting the negotiation</text>
+
+  <!-- 4 workstream boxes -->
+  <g>
+    <rect x="80" y="320" width="170" height="70" rx="4" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+    <text x="165" y="342" text-anchor="middle" font-size="11" font-weight="700" fill="#0d2342">Industry Consultation</text>
+    <text x="165" y="360" text-anchor="middle" font-size="9.5" fill="#4a6b8c">Local airlines input</text>
+    <text x="165" y="373" text-anchor="middle" font-size="9.5" fill="#4a6b8c">on capacity, routes,</text>
+    <text x="165" y="386" text-anchor="middle" font-size="9.5" fill="#4a6b8c">designation criteria</text>
+  </g>
+
+  <g>
+    <rect x="270" y="320" width="170" height="70" rx="4" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+    <text x="355" y="342" text-anchor="middle" font-size="11" font-weight="700" fill="#0d2342">Legal Review</text>
+    <text x="355" y="360" text-anchor="middle" font-size="9.5" fill="#4a6b8c">National law alignment,</text>
+    <text x="355" y="373" text-anchor="middle" font-size="9.5" fill="#4a6b8c">TASA reference check,</text>
+    <text x="355" y="386" text-anchor="middle" font-size="9.5" fill="#4a6b8c">prior treaty review</text>
+  </g>
+
+  <g>
+    <rect x="460" y="320" width="170" height="70" rx="4" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+    <text x="545" y="342" text-anchor="middle" font-size="11" font-weight="700" fill="#0d2342">Inter-agency Coord.</text>
+    <text x="545" y="360" text-anchor="middle" font-size="9.5" fill="#4a6b8c">Foreign Ministry,</text>
+    <text x="545" y="373" text-anchor="middle" font-size="9.5" fill="#4a6b8c">Customs, Immigration,</text>
+    <text x="545" y="386" text-anchor="middle" font-size="9.5" fill="#4a6b8c">Trade alignment</text>
+  </g>
+
+  <g>
+    <rect x="650" y="320" width="170" height="70" rx="4" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+    <text x="735" y="342" text-anchor="middle" font-size="11" font-weight="700" fill="#0d2342">Ratification Path</text>
+    <text x="735" y="360" text-anchor="middle" font-size="9.5" fill="#4a6b8c">Parliament approval,</text>
+    <text x="735" y="373" text-anchor="middle" font-size="9.5" fill="#4a6b8c">treaty registration,</text>
+    <text x="735" y="386" text-anchor="middle" font-size="9.5" fill="#4a6b8c">depositary notice</text>
+  </g>
+
+  <!-- Bottom note box -->
+  <rect x="80" y="425" width="740" height="50" rx="4" fill="#fef3c7" stroke="#d97706" stroke-width="1"/>
+  <text x="450" y="448" text-anchor="middle" font-size="11" font-weight="700" fill="#92400e">Reality check: actual timelines run longer than the chart suggests.</text>
+  <text x="450" y="465" text-anchor="middle" font-size="10" fill="#92400e">Politically sensitive ASAs can stall for years between rounds. Many "negotiations" are diplomatic placeholders that never reach Stage 6.</text>
+</svg>
