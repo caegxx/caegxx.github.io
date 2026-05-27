@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 540" width="900" height="540" font-family="Helvetica, Arial, sans-serif">
+  <rect width="900" height="540" fill="#ffffff"/>
+
+  <!-- Title -->
+  <text x="450" y="32" text-anchor="middle" font-size="18" font-weight="700" fill="#0d2342">Three Modern Wide-bodies at a Glance</text>
+  <text x="450" y="52" text-anchor="middle" font-size="12" fill="#4a6b8c">787-9 vs A350-900 vs A330-900neo on the metrics that matter for route planning</text>
+
+  <!-- Column headers (3 aircraft) -->
+  <g>
+    <!-- 787-9 column -->
+    <rect x="240" y="80" width="190" height="55" rx="6" fill="#1e3a5f"/>
+    <text x="335" y="105" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">Boeing 787-9</text>
+    <text x="335" y="123" text-anchor="middle" font-size="10" fill="#c5d6e8">Dreamliner</text>
+
+    <!-- A350-900 column -->
+    <rect x="445" y="80" width="190" height="55" rx="6" fill="#1e3a5f"/>
+    <text x="540" y="105" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">Airbus A350-900</text>
+    <text x="540" y="123" text-anchor="middle" font-size="10" fill="#c5d6e8">XWB</text>
+
+    <!-- A330-900neo column -->
+    <rect x="650" y="80" width="190" height="55" rx="6" fill="#1e3a5f"/>
+    <text x="745" y="105" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">Airbus A330-900neo</text>
+    <text x="745" y="123" text-anchor="middle" font-size="10" fill="#c5d6e8">A330neo</text>
+  </g>
+
+  <!-- Row labels -->
+  <g font-size="11" font-weight="700" fill="#0d2342" text-anchor="end">
+    <text x="225" y="167">Typical Capacity</text>
+    <text x="225" y="217">Max Range</text>
+    <text x="225" y="267">Cruise Speed</text>
+    <text x="225" y="317">Service Ceiling</text>
+    <text x="225" y="367">Engine</text>
+    <text x="225" y="417">Strongest Suit</text>
+  </g>
+
+  <!-- Row 1: Capacity -->
+  <g>
+    <rect x="240" y="148" width="190" height="40" fill="#f1f5f9"/>
+    <text x="335" y="171" text-anchor="middle" font-size="13" font-weight="700" fill="#0d2342">~250-300 pax</text>
+    <text x="335" y="184" text-anchor="middle" font-size="9" fill="#64748b">3-class</text>
+
+    <rect x="445" y="148" width="190" height="40" fill="#f1f5f9"/>
+    <text x="540" y="171" text-anchor="middle" font-size="13" font-weight="700" fill="#0d2342">~280-315 pax</text>
+    <text x="540" y="184" text-anchor="middle" font-size="9" fill="#64748b">3-class</text>
+
+    <rect x="650" y="148" width="190" height="40" fill="#f1f5f9"/>
+    <text x="745" y="171" text-anchor="middle" font-size="13" font-weight="700" fill="#0d2342">~280-310 pax</text>
+    <text x="745" y="184" text-anchor="middle" font-size="9" fill="#64748b">3-class</text>
+  </g>
+
+  <!-- Row 2: Range -->
+  <g>
+    <rect x="240" y="198" width="190" height="40" fill="#ffffff"/>
+    <text x="335" y="221" text-anchor="middle" font-size="13" font-weight="700" fill="#0d2342">~7,565 nm</text>
+    <text x="335" y="234" text-anchor="middle" font-size="9" fill="#64748b">14,010 km</text>
+
+    <rect x="445" y="198" width="190" height="40" fill="#dbeafe"/>
+    <text x="540" y="221" text-anchor="middle" font-size="13" font-weight="700" fill="#1e3a5f">~8,100 nm</text>
+    <text x="540" y="234" text-anchor="middle" font-size="9" fill="#1e3a5f">15,000 km ★</text>
+
+    <rect x="650" y="198" width="190" height="40" fill="#ffffff"/>
+    <text x="745" y="221" text-anchor="middle" font-size="13" font-weight="700" fill="#0d2342">~7,200 nm</text>
+    <text x="745" y="234" text-anchor="middle" font-size="9" fill="#64748b">13,334 km</text>
+  </g>
+
+  <!-- Row 3: Cruise Speed -->
+  <g>
+    <rect x="240" y="248" width="190" height="40" fill="#f1f5f9"/>
+    <text x="335" y="271" text-anchor="middle" font-size="13" font-weight="700" fill="#0d2342">Mach 0.85</text>
+    <text x="335" y="284" text-anchor="middle" font-size="9" fill="#64748b">fastest ★</text>
+
+    <rect x="445" y="248" width="190" height="40" fill="#f1f5f9"/>
+    <text x="540" y="271" text-anchor="middle" font-size="13" font-weight="700" fill="#0d2342">Mach 0.85</text>
+    <text x="540" y="284" text-anchor="middle" font-size="9" fill="#64748b">long-cruise</text>
+
+    <rect x="650" y="248" width="190" height="40" fill="#f1f5f9"/>
+    <text x="745" y="271" text-anchor="middle" font-size="13" font-weight="700" fill="#0d2342">Mach 0.82</text>
+    <text x="745" y="284" text-anchor="middle" font-size="9" fill="#64748b">economical</text>
+  </g>
+
+  <!-- Row 4: Ceiling -->
+  <g>
+    <rect x="240" y="298" width="190" height="40" fill="#ffffff"/>
+    <text x="335" y="321" text-anchor="middle" font-size="13" font-weight="700" fill="#0d2342">43,000 ft</text>
+    <text x="335" y="334" text-anchor="middle" font-size="9" fill="#64748b">highest ★</text>
+
+    <rect x="445" y="298" width="190" height="40" fill="#ffffff"/>
+    <text x="540" y="321" text-anchor="middle" font-size="13" font-weight="700" fill="#0d2342">41,500 ft</text>
+    <text x="540" y="334" text-anchor="middle" font-size="9" fill="#64748b"></text>
+
+    <rect x="650" y="298" width="190" height="40" fill="#ffffff"/>
+    <text x="745" y="321" text-anchor="middle" font-size="13" font-weight="700" fill="#0d2342">41,000 ft</text>
+    <text x="745" y="334" text-anchor="middle" font-size="9" fill="#64748b"></text>
+  </g>
+
+  <!-- Row 5: Engine -->
+  <g>
+    <rect x="240" y="348" width="190" height="40" fill="#f1f5f9"/>
+    <text x="335" y="371" text-anchor="middle" font-size="11" fill="#0d2342">GEnx / Trent 1000</text>
+    <text x="335" y="384" text-anchor="middle" font-size="9" fill="#64748b">no-bleed system</text>
+
+    <rect x="445" y="348" width="190" height="40" fill="#f1f5f9"/>
+    <text x="540" y="371" text-anchor="middle" font-size="11" fill="#0d2342">Trent XWB-84</text>
+    <text x="540" y="384" text-anchor="middle" font-size="9" fill="#64748b">XWB-only</text>
+
+    <rect x="650" y="348" width="190" height="40" fill="#f1f5f9"/>
+    <text x="745" y="371" text-anchor="middle" font-size="11" fill="#0d2342">Trent 7000</text>
+    <text x="745" y="384" text-anchor="middle" font-size="9" fill="#64748b">10:1 bypass</text>
+  </g>
+
+  <!-- Row 6: Strongest Suit -->
+  <g>
+    <rect x="240" y="398" width="190" height="55" fill="#fef3c7" stroke="#d97706" stroke-width="1"/>
+    <text x="335" y="421" text-anchor="middle" font-size="11" font-weight="700" fill="#92400e">Versatility</text>
+    <text x="335" y="437" text-anchor="middle" font-size="9" fill="#92400e">Long thin routes,</text>
+    <text x="335" y="449" text-anchor="middle" font-size="9" fill="#92400e">passenger appeal</text>
+
+    <rect x="445" y="398" width="190" height="55" fill="#fef3c7" stroke="#d97706" stroke-width="1"/>
+    <text x="540" y="421" text-anchor="middle" font-size="11" font-weight="700" fill="#92400e">Ultra long-haul</text>
+    <text x="540" y="437" text-anchor="middle" font-size="9" fill="#92400e">Largest range,</text>
+    <text x="540" y="449" text-anchor="middle" font-size="9" fill="#92400e">capacity headroom</text>
+
+    <rect x="650" y="398" width="190" height="55" fill="#fef3c7" stroke="#d97706" stroke-width="1"/>
+    <text x="745" y="421" text-anchor="middle" font-size="11" font-weight="700" fill="#92400e">Unit cost</text>
+    <text x="745" y="437" text-anchor="middle" font-size="9" fill="#92400e">Lowest acquisition,</text>
+    <text x="745" y="449" text-anchor="middle" font-size="9" fill="#92400e">commonality benefit</text>
+  </g>
+
+  <!-- Footnote -->
+  <text x="450" y="495" text-anchor="middle" font-size="10" fill="#64748b" font-style="italic">★ = best in class for that metric. Real-world performance varies by configuration, payload, and operating conditions.</text>
+  <text x="450" y="512" text-anchor="middle" font-size="10" fill="#64748b" font-style="italic">Capacity figures assume typical 3-class layout. All-economy configurations can exceed these substantially.</text>
+</svg>
